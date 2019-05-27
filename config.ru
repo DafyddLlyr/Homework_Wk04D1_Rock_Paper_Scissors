@@ -1,2 +1,0 @@
-require "./controller"
-run Controller
