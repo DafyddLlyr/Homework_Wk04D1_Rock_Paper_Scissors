@@ -1,6 +1,6 @@
 class Game
 
-  def initialize(first, second)
+  def initialize(first, second = [])
     @first = first
     @second = second
   end
