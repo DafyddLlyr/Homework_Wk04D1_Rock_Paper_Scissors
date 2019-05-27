@@ -2,6 +2,15 @@ body {
   background-color: #C1BDB3;
   margin: 0;
   padding: 0;
+  font-family: 'Patua One', cursive;
+}
+
+a {
+  color: #000000;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 nav {
@@ -9,12 +18,44 @@ nav {
   background-color: #31393C;
   color: #FFFFFF;
   justify-content: center;
+  height: 20vh;
+}
+
+footer {
+  background-color: #7F7979;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+}
+
+footer p, footer a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .game {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 60vh;
+}
+
+.container {
+  text-align: center;
+  margin: 0 20vw;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.container .far {
+  font-size: 2.3rem;
 }
 
 .action {
@@ -27,25 +68,48 @@ nav {
   height: 20vw;
   font-size: 8rem;
   background-color: #FFD046;
+  box-shadow: 8px 8px 8px grey;
 }
 
-.action:hover {
+.action:hover, .button:hover {
   transform:scale(1.05,1.05)
 }
 
-.action:active {
+.action:active, .button:active {
   transform:scale(1,1)
 }
 
-a {
-  color: #000000;
+.announcement {
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-footer {
-  background-color: #7F7979;
-  position: fixed;
-  bottom: 0  ;
+.button {
   display: flex;
   align-items: center;
-  width: 100vw;
+  justify-content: center;
+  border-radius: 20px;
+  border: 3px solid #31393C;
+  width: 20vw;
+  height: 5vw;
+  background-color: #FFD046;
+  font-size: 2rem;
+  box-shadow: 4px 4px 4px grey;
+}
+
+#home, .home ul {
+  list-style: none;
+}
+
+.home p {
+  font-size: 1.1rem;
+}
+
+.home ul {
+  text-align: left;
+  line-height: 2.5;
+  padding: 0;
 }
