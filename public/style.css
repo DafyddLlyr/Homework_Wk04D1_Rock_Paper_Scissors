@@ -1,3 +1,51 @@
 body {
-  background-color: yellow;
+  background-color: #C1BDB3;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #31393C;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 3px solid #31393C;
+  width: 20vw;
+  height: 20vw;
+  font-size: 8rem;
+  background-color: #FFD046;
+}
+
+.action:hover {
+  transform:scale(1.05,1.05)
+}
+
+.action:active {
+  transform:scale(1,1)
+}
+
+a {
+  color: #000000;
+}
+
+footer {
+  background-color: #7F7979;
+  position: fixed;
+  bottom: 0  ;
+  display: flex;
+  align-items: center;
+  width: 100vw;
 }
